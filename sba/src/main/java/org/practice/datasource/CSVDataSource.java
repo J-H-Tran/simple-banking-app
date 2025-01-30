@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class CSVDataSource {
     private static final String CSV_FILE = "sba-users.csv";
-    private Map<String, String> users = new HashMap<>();
+    private final Map<String, String> users = new HashMap<>();
 
     public CSVDataSource() {
         loadUsers();
